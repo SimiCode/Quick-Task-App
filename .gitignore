@@ -5,3 +5,5 @@ venv
 .cache
 .coverage
 .env
+herokuapp
+.gitignore
