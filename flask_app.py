@@ -1,10 +1,7 @@
 from flask import Flask, request, jsonify
 import models
 
-
 app = Flask(__name__)
-
-
 
 @app.route('/api/v1/tasks')
 def home():
@@ -22,6 +19,3 @@ def add_an_order():
 	models.add_oder(task)
 	return "success", 201
 
-
-if __name__ == '__main__':
-	app.run(debug=True)
