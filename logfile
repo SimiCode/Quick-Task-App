@@ -1,0 +1,21 @@
+2018-11-10 15:08:42.031 EAT [51236] LOG:  listening on IPv6 address "::1", port 5432
+2018-11-10 15:08:42.031 EAT [51236] LOG:  listening on IPv6 address "fe80::1%lo0", port 5432
+2018-11-10 15:08:42.031 EAT [51236] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-11-10 15:08:42.102 EAT [51236] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-11-10 15:08:42.134 EAT [51237] LOG:  database system was shut down at 2018-11-10 15:08:28 EAT
+2018-11-10 15:08:42.137 EAT [51236] LOG:  database system is ready to accept connections
+2018-11-10 15:08:49.023 EAT [51245] FATAL:  database "simicode" does not exist
+2018-11-10 15:10:03.954 EAT [51248] FATAL:  database "simicode" does not exist
+2018-11-10 15:12:15.247 EAT [51252] FATAL:  database "simicode" does not exist
+2018-11-10 15:15:45.874 EAT [51260] ERROR:  syntax error at or near "createuser" at character 1
+2018-11-10 15:15:45.874 EAT [51260] STATEMENT:  createuser 
+	;
+2018-11-10 15:22:09.524 EAT [51293] ERROR:  role "edison" already exists
+2018-11-10 15:22:09.524 EAT [51293] STATEMENT:  CREATE ROLE edison NOSUPERUSER NOCREATEDB NOCREATEROLE INHERIT LOGIN;
+2018-11-10 15:22:19.333 EAT [51296] ERROR:  role "simicode" already exists
+2018-11-10 15:22:19.333 EAT [51296] STATEMENT:  CREATE ROLE simicode NOSUPERUSER NOCREATEDB NOCREATEROLE INHERIT LOGIN;
+2018-11-10 15:24:12.649 EAT [51303] ERROR:  role "edison" already exists
+2018-11-10 15:24:12.649 EAT [51303] STATEMENT:  CREATE ROLE edison PASSWORD 'md5583b460b436f4e14d6bcbaf865f815d6' SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN;
+2018-11-10 15:25:09.894 EAT [51311] ERROR:  current user cannot be dropped
+2018-11-10 15:25:09.894 EAT [51311] STATEMENT:  DROP ROLE simicode;
+2018-11-10 15:33:30.705 EAT [51350] FATAL:  role "herokuapp" does not exist
