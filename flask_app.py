@@ -5,6 +5,11 @@ import models
 app = Flask(__name__)
 
 
+
+@app.route('/api/v1/tasks')
+def home():
+	return "Welcome Back!"
+
 @app.route('/api/v1/tasks')
 def get_all_tasks():
 	tasks = models.get_tasks()
