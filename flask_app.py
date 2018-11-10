@@ -3,7 +3,7 @@ import models
 
 app = Flask(__name__)
 
-@app.route('/api/v1/tasks')
+@app.route('/')
 def home():
 	return "Welcome Back!"
 
