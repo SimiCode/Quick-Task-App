@@ -16,7 +16,8 @@ class DatabaseConnection:
         host='ec2-50-19-249-121.compute-1.amazonaws.com' port='5432'
         """
         # connect to the database
-        connection = psycopg2.connect(dbname=self.db_name, user='edison', password='password', host='localhost', port='5432')
+        connection = psycopg2.connect(db_credentials)
+
         connection.autocommit = True
         self.cursor = connection.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         print(self.cursor)
