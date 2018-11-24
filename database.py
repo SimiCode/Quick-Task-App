@@ -9,11 +9,11 @@ class DatabaseConnection:
         if os.getenv('APP_SETTINGS') == 'test_db':
             self.db_name = 'test_db'
         else:
-            self.db_name = 'herokuapp'
+            self.db_name = 'd8qb27bt4r07nf'
                 
         db_credentials = f"""
-        dbname='{self.db_name}' user='edison' password='password'
-        host='localhost' port='5432'
+        dbname='{self.db_name}' user='foznymlisghlyh' password='e60937bf246a4e62e2ac4b7135d4c291dd61c98066c84d2d89d38ac0a2400f53'
+        host='ec2-50-19-249-121.compute-1.amazonaws.com' port='5432'
         """
         # connect to the database
         connection = psycopg2.connect(dbname=self.db_name, user='edison', password='password', host='localhost', port='5432')
