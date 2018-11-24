@@ -19,3 +19,5 @@
 2018-11-10 15:25:09.894 EAT [51311] ERROR:  current user cannot be dropped
 2018-11-10 15:25:09.894 EAT [51311] STATEMENT:  DROP ROLE simicode;
 2018-11-10 15:33:30.705 EAT [51350] FATAL:  role "herokuapp" does not exist
+2018-11-11 03:59:41.145 EAT [51241] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2018-11-11 16:18:11.486 EAT [51241] LOG:  using stale statistics instead of current ones because stats collector is not responding
