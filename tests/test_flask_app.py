@@ -37,7 +37,7 @@ class TestRoutes(unittest.TestCase):
         self.assertIn('my taskest task', task_names)
 
     def test_db_used(self):
-        self.assertIs(tasks_db.db.db_name, 'herokuapp')
+        self.assertIs(tasks_db.db.db_name, 'd8qb27bt4r07nf')
         self.assertIsNot(tasks_db.db.db_name, 'test_db')
 
     @classmethod
